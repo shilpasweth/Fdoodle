@@ -111,10 +111,10 @@ public class RecycleList extends RecyclerView.Adapter<RecycleList.CustomViewHold
     @Override
     public void onBindViewHolder(CustomViewHolder customViewHolder, int i) {
         int position=i;
-        int date=26;
+        //int date=26;
         String[] temp=present[position];
 
-        timenow.set(Calendar.DATE,date);
+       // timenow.set(Calendar.DATE,date);
 
 
 
