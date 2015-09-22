@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="f15.delta.com.fdoodle.QRCodeLogin">
+    tools:context="com.festember.festemberapp.QRCodeLogin">
 
     <ImageView
         android:id="@+id/festemberLogo"

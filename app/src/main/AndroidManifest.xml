@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="f15.delta.com.fdoodle" >
+    package="com.festember.festemberapp" >
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -8,16 +8,16 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
-        android:name="f15.delta.com.fdoodle.permission.C2D_MESSAGE"
+        android:name="com.festember.festemberapp.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="f15.delta.com.fdoodle.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.festember.festemberapp.permission.C2D_MESSAGE" />
 
 
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
-        android:icon="@drawable/festember_logo_old"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
 
         android:largeHeap="true"
@@ -32,27 +32,27 @@
             android:exported="true" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.festember.festemberapp.MainActivity"
             android:label="@string/app_name" >
 
             <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen"! -->
         </activity>
         <activity
-            android:name=".Painter"
+            android:name="com.festember.festemberapp.Painter"
             android:configChanges="locale|keyboard|keyboardHidden"
-            android:label="@string/app_name"
+            android:label="Doodle"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".PainterPreferences"
+            android:name="com.festember.festemberapp.PainterPreferences"
             android:configChanges="locale"
             android:hardwareAccelerated="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.festember.festemberapp.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:label="" >
+            android:label="Festember 15" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -60,7 +60,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Hscreen"
+            android:name="com.festember.festemberapp.Hscreen"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_hscreen" >
         </activity>
@@ -70,82 +70,81 @@
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name=".RaffleActivity"
+            android:name="com.festember.festemberapp.RaffleActivity"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_raffle" >
         </activity>
         <activity
-            android:name=".UpcomingActivity"
+            android:name="com.festember.festemberapp.UpcomingActivity"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_upcoming"
             android:theme="@style/Theme.AppCompat.NoActionBar" >
         </activity>
         <activity
-            android:name=".ScheduleActivity"
-            android:screenOrientation="portrait"
+            android:name="com.festember.festemberapp.ScheduleActivity"
             android:label="@string/title_activity_schedule"
             android:theme="@style/AppTheme2" >
         </activity>
         <activity
-            android:name=".PopupActivity"
-            android:screenOrientation="portrait"
+            android:name="com.festember.festemberapp.PopupActivity"
+
             android:label="@string/title_activity_popup"
             android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth" >
         </activity>
         <activity
-            android:name=".UserProfile"
+            android:name="com.festember.festemberapp.UserProfile"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_user_profile" >
         </activity>
         <activity
-            android:name=".QRCodeLogin"
+            android:name="com.festember.festemberapp.QRCodeLogin"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_qrcode_login" >
         </activity>
         <activity
-            android:name=".QRCodeWelcomePage"
+            android:name="com.festember.festemberapp.QRCodeWelcomePage"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_qrcode_welcome_page" >
         </activity>
         <activity
-            android:name=".QRSplashScreen"
+            android:name="com.festember.festemberapp.QRSplashScreen"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_qrsplash_screen" >
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.festember.festemberapp.LoginActivity"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_login" >
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.festember.festemberapp.RegisterActivity"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_register" >
         </activity>
         <activity
-            android:name=".ClusterPage"
+            android:name="com.festember.festemberapp.ClusterPage"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_cluster_page" >
         </activity>
         <activity
-            android:name=".EventActivity"
+            android:name="com.festember.festemberapp.EventActivity"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_event" >
         </activity>
         <activity
-            android:name=".Single_Activity"
+            android:name="com.festember.festemberapp.Single_Activity"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_single_"
             android:theme="@style/AppTheme2" >
         </activity>
         <activity
-            android:name=".Notify"
+            android:name="com.festember.festemberapp.Notify"
             android:screenOrientation="portrait"
             android:label="Notifications" >
         </activity>
 
         <receiver
-            android:name=".GCMBroadcastReceiver"
+            android:name="com.festember.festemberapp.GCMBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
@@ -154,7 +153,7 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".GCMMessagerHandler" />
+        <service android:name="com.festember.festemberapp.GCMMessagerHandler" />
 
     </application>
 

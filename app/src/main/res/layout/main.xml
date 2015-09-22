@@ -4,7 +4,7 @@
     android:id="@+id/painterroot"
 	android:layout_height="fill_parent">
 	
-	<f15.delta.com.fdoodle.PainterCanvas
+	<com.festember.festemberapp.PainterCanvas
         android:id="@+id/canvas"
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"/>
@@ -78,7 +78,8 @@
 			<LinearLayout style="@style/BrushProperties.Controls.Last">
 				<TextView style="@style/BrushProperties.Label"
 					android:text="@string/blur_style" />
-				<f15.delta.com.fdoodle.BlurStyleSpinner android:id="@+id/brush_blur_style"
+				<com.festember.festemberapp.BlurStyleSpinner
+					android:id="@+id/brush_blur_style"
 					android:prompt="@string/blur_type_select"
 					android:entries="@array/blur_types"
 					style="@style/BrushProperties.Control" />			
